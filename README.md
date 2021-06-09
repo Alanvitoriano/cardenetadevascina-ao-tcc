@@ -3,7 +3,7 @@
 
 ## 1. Apresentação
 <p align="center">
-    <img src="img_readme/img_logo.jpeg">
+    <img src="img_readme/logo.jpeg">
 </p>
 
 Vacina ON é um sistema baseado em um aplicativo móvel para auxiliar as pessoas e profissionais da saúde a manter de forma prática, a organização e arquitetura de uma carteira de vacinação. Sendo responsável por organizar, agendar e registrar as vacinas recebidas pelo cidadão ao longo da sua vida.
@@ -34,27 +34,21 @@ Matheus de Oliveira Itajahy
 * Gituser: [@itajahy](https://github.com/itajahy)
 
 
-## 3. REQUISITOS FUNCIONAIS
+## 3. Requisitos Funcionais
 * Logar: <br>
-O sistema deve permitir o login dos individuos: Usuários, UBS e Vacinador.
+O sistema deve permitir o login dos individuos: Usuários, UBS e Vacinador.<br>
 * Cadastro de Usuários: <br>
-O sistema deve permitir o cadastro de novos usuários.
+O sistema deve permitir o cadastro de novos usuários.<br>
 * Cadastro de UBS: <br>
-O sistema deve permitir o cadastro de novos postos de vacinação (UBS e Hospitais).
+O sistema deve permitir o cadastro de novos postos de vacinação (UBS e Hospitais).<br>
 * Cadastro de Vacinadores: <br>
-O sistema deve permitir o cadastro dos vacinadores (funcionários das UBS e Hospitais que irão validar a vacinação).
+O sistema deve permitir o cadastro dos vacinadores (funcionários das UBS e Hospitais que irão validar a vacinação).<br>
 * Cadastro de vacinas 1ª dose: <br>
-O sistema deve permitir a inclusão das vacinas disponíveis para 1ª dose. 
+O sistema deve permitir a inclusão das vacinas disponíveis para 1ª dose.<br> 
 * Cadastro de vacinas 2ª dose: <br>
-O sistema deve permitir a inclusão das vacinas disponíveis para 2ª dose, caso seja preciso. 
-* Status de usuários vacinados: <br>
-O sistema deve permitir que o posto de vacinação altere o status dos usuários já vacinados.
-* Cadastro e informações de campanhas de vacinação: <br>
-O sistema deve permitir que os postos de vacinação cadastre campanhas e informações sobre as vacinas disponibilizadas.
-* Confirmação de presença na campanha: <br>
-O sistema deve permitir que o orgão de saúde confirme a vacina tomada pelo o usuário. 
+O sistema deve permitir a inclusão das vacinas disponíveis para 2ª dose, caso seja preciso. <br>
 * Consulta de histórico de vacinas: <br>
-O sistema deve permitir a visualização do histórico das vacinas tomadas pelo o usuário.
+O sistema deve permitir a visualização do histórico das vacinas tomadas pelo o usuário.<br>
 
 #### 3.1. Use Case
 
@@ -83,94 +77,113 @@ O sistema deve permitir a visualização do histórico das vacinas tomadas pelo 
 - Firebase
 - Android SDK
 - Java SDK
+- Android Nativo
 
 
 ## 5. Apresentação do Sistema
 
-#### Tela inicial e Login do Usuário
+##### Tela inicial
 <p align="center">
-    <img src="img/img_login_usuario.jpeg">
+    <img src="img_readme/pag_inicial.jpeg">
 </p>
-> Tela mobile de apresentação e login do usuário
+> Tela inicial do aplicativo
 
-#### Selecionar o tipo de Login 
+#### Tela para selecionar o login
 <p align="center">
-    <img src="img/img_selecionar_login.jpeg">
+    <img src="img_readme/img_selecionar_login.jpeg">
 </p>
-> Tela para selecionar o tipo de usuário: Usuário, UBS ou Vacinador. 
+> Tela para selecionar o tipo de login: usuário, ubs ou vacinador, ou caso deseje, cadastra-se na plataforma
+
+#### Tela de Login do Usuário
+<p align="center">
+    <img src="img_readme/img_login_usuario.jpeg">
+</p>
+> Tela de login do usuário, caso seja um vacinador ou UBS possui a possibilidade de realizar a troca para o devido login
+
+#### Selecionar o tipo de Cadastro 
+<p align="center">
+    <img src="img_readme/img_selecionar_cadastro.jpeg">
+</p>
+> Tela para selecionar o tipo de cadastro que será realizado: Usuário, UBS ou Vacinador. 
 
 #### Cadastrar o Usuário
 <p align="center">
-    <img src="img/img_cadastro_usuario.jpeg">
+    <img src="img_readme/img_cadastro_usuario.jpeg">
 </p>
 > Tela para cadastrar o usuário.
 
 #### Cadastrar a UBS
 <p align="center">
-    <img src="img/img_cadastro_ubs.jpeg">
+    <img src="img_readme/img_cadastro_ubs.jpeg">
 </p>
 > Tela para cadastrar a UBS.
 
+#### Cadastrar o Vacinador
+<p align="center">
+    <img src="img_readme/img_cadastro_vacinador.jpeg">
+</p>
+> Tela para cadastrar o vacinador.
+
 #### Cadastrar a 1ª dose da vacina
 <p align="center">
-    <img src="img/img_cadastro_vacina.jpeg">
+    <img src="img_readme/img_cadastro_vacina.jpeg">
 </p>
 > Tela para cadastrar a primeira dose da vacina.
 
 #### Cadastro 2ª dose da vacina
 <p align="center">
-    <img src="img/img_cadastro_2dose.jpeg">
+    <img src="img_readme/img_cadastro_2dose.jpeg">
 </p>
 > Tela que irá aparecer para direcionar o usuário para cadastrar a segunda dose da vacina, caso seja necessário.
 
 <p align="center">
-    <img src="img/img_2dose.jpeg">
+    <img src="img_readme/img_2dose.jpeg">
 </p>
 > Tela para cadastrar a segunda dose da vacina.
 
-#### Listagem da 1ª dose das vacinas disponíveis
+#### Listagem das vacinas tomadas
 <p align="center">
-    <img src="img/img_lista_vacina.jpeg">
+    <img src="img_readme/img_lista_vacinas.jpeg">
 </p>
-> Tela de listagem das vacinas disponíveis.
+> Tela de listagem de todas as vacinas tomadas pelo o usuário, incluindo as primeiras doses, e caso necessário as segundas doses tomadas.
 
-#### Listagem da 2ª dose das vacinas disponíveis
+#### Contatos dos Vacinadores e UBS 
 <p align="center">
-    <img src="img/img_lista_2dose.jpeg">
+    <img src="img_readme/img_contatos.jpeg">
 </p>
-> Tela de listagem da segunda dose das vacinas disponíveis.
+> Tela dos contatos dos vacinadores e das UBS locais 
 
 
 ## 6. Firebase
 
 #### 6.1. Usuários
 <p align="center">
-    <img src="img/firebase_usuarios.jpeg">
+    <img src="img_readme/firebase_usuarios.jpeg">
 </p>
 
 #### 6.2. UBS
 <p align="center">
-    <img src="img/firebase_ubs.jpeg">
+    <img src="img_readme/firebase_ubs.jpeg">
 </p>
 
 #### 6.3. Vacinador
 <p align="center">
-    <img src="img/firebase_vacinador.jpeg">
+    <img src="img_readme/firebase_vacinador.jpeg">
 </p>
 
 #### 6.4. Usuários com a 1ª Dose da Vacina:
 <p align="center">
-    <img src="img/firebase_vacina.jpeg">
+    <img src="img_readme/firebase_vacina.jpeg">
 </p>
 
 #### 6.5. Usuários com a 2ª Dose da Vacina:
 <p align="center">
-    <img src="img/firebase_2dose.jpeg">
+    <img src="img_readme/firebase_2dose.jpeg">
 </p>
 
 #### 6.6. Validação das Vacinas
 <p align="center">
-    <img src="img/firebase_validacao.jpeg">
+    <img src="img_readme/firebase_validacao.jpeg">
 </p>
 
 
