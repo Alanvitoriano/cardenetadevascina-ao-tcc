@@ -81,10 +81,10 @@ class _CadastroVacinadorState extends State<CadastroVacinador> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Cadastro"),
+        title: Text("Cadastro (VACINADOR)"),
       ),
       body: Container(
-        decoration: BoxDecoration(color: Colors.pink),
+        decoration: BoxDecoration(color: Colors.white),
         padding: EdgeInsets.all(16),
         child: Center(
           child: SingleChildScrollView(
@@ -158,9 +158,9 @@ class _CadastroVacinadorState extends State<CadastroVacinador> {
                   child: RaisedButton(
                       child: Text(
                         "Cadastrar",
-                        style: TextStyle(color: Colors.white, fontSize: 20),
+                        style: TextStyle(color: Colors.black, fontSize: 20),
                       ),
-                      color: Colors.green,
+                      color: Colors.lightBlue[100],
                       padding: EdgeInsets.fromLTRB(32, 16, 32, 16),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(32)),
