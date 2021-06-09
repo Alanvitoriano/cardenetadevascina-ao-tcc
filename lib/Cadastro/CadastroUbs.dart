@@ -80,7 +80,7 @@ class _CadastroUbsState extends State<CadastroUbs> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Cadastro"),
+        title: Text("Cadastro (UBS)"),
       ),
       body: Container(
         decoration: BoxDecoration(color: Colors.white),
