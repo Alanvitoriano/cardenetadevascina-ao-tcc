@@ -2,8 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:vacinaon/Cadastro/Usuario.dart';
-import 'package:vacinaon/TelasHomeUsuario/ContatoVacinador.dart';
-import 'package:vacinaon/TelasHomeUsuario/ContatoUbs.dart';
+import 'package:vacinaon/TelasHomeUsuario/Homecontato.dart';
 import 'package:vacinaon/TelasHomeUsuario/segundaDose.dart';
 import 'package:vacinaon/TelasHomeUsuario/vacinas.dart';
 
@@ -38,7 +37,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
     super.initState();
     _recuperarDadosUsuarios();
 
-    _tabController = TabController(length: 4, vsync: this);
+    _tabController = TabController(length: 2, vsync: this);
   }
 
   _escolhaMenuItem(String itemEscolhido) {
@@ -65,27 +64,27 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Usuario comun"),
+        title: Text("Minhas Vacinas"),
         bottom: TabBar(
-          indicatorWeight: 2,
+          indicatorWeight: 3,
           indicatorColor: Colors.black,
           controller: _tabController,
           labelStyle: TextStyle(
-            fontSize: 12,
+            fontSize: 15,
             fontWeight: FontWeight.bold,
           ),
           tabs: <Widget>[
-            Tab(text: "Vacinas"),
-            Tab(text: "2ª Dose"),
-            Tab(
-              text: "Vacinadores",
-            ),
-            Tab(
-              text: "Ubs Locais",
-            )
+            Tab(text: "Vacinas \n1ª Dose"),
+            Tab(text: "Vacinas \n2ª Dose")
           ],
         ),
         actions: <Widget>[
+          IconButton(
+              icon: Icon(Icons.menu_open),
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (_) => Homecontato()));
+              }),
           PopupMenuButton<String>(
             onSelected: _escolhaMenuItem,
             itemBuilder: (context) {
@@ -101,12 +100,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       ),
       body: TabBarView(
         controller: _tabController,
-        children: <Widget>[
-          Vacinas(),
-          SegundaDose(),
-          ContatoVacinador(),
-          ContatoUbs()
-        ],
+        children: <Widget>[Vacinas(), SegundaDose()],
       ),
     );
   }

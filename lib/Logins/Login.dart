@@ -139,48 +139,6 @@ class _LoginState extends State<Login> {
                       },
                     ),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      FlatButton(
-                        textColor: Colors.black,
-                        child: Text("Login Vacinador"),
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => LoginVacinador()));
-                        },
-                      ),
-                      FlatButton(
-                        textColor: Colors.black,
-                        child: Text("Login UBS"),
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => LoginUbs()));
-                        },
-                      )
-                    ],
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(top: 10),
-                    child: Center(
-                      child: GestureDetector(
-                        child: Text(
-                          " Cadastre-se",
-                          style: TextStyle(color: Colors.black),
-                        ),
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Escolhar()));
-                        },
-                      ),
-                    ),
-                  ),
                   Padding(
                     padding: EdgeInsets.only(top: 16),
                     child: Center(
