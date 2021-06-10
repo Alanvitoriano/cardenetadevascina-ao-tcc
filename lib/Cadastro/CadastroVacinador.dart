@@ -15,6 +15,7 @@ class _CadastroVacinadorState extends State<CadastroVacinador> {
   TextEditingController _controllerSenha = TextEditingController();
   TextEditingController _controllerCrm = TextEditingController();
   String _mensagemErro = "";
+  bool _senhaMostrar = false;
   //metodo para validar os campos do usuario
   _validarCampos() {
     String nome = _controllerNome.text;
@@ -99,8 +100,9 @@ class _CadastroVacinadorState extends State<CadastroVacinador> {
                     keyboardType: TextInputType.text,
                     style: TextStyle(fontSize: 20),
                     decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.person),
                         contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
-                        hintText: "Nome",
+                        hintText: "Nome Vacinador",
                         filled: true,
                         fillColor: Colors.white,
                         border: OutlineInputBorder(
@@ -114,6 +116,7 @@ class _CadastroVacinadorState extends State<CadastroVacinador> {
                     keyboardType: TextInputType.emailAddress,
                     style: TextStyle(fontSize: 20),
                     decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.email),
                         contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
                         hintText: "E-mail",
                         filled: true,
@@ -126,12 +129,22 @@ class _CadastroVacinadorState extends State<CadastroVacinador> {
                   padding: EdgeInsets.only(bottom: 8),
                   child: TextField(
                     controller: _controllerSenha,
-                    obscureText: true,
+                    obscureText: !this._senhaMostrar,
                     keyboardType: TextInputType.emailAddress,
                     style: TextStyle(fontSize: 20),
                     decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.security),
                         contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
                         hintText: "Senha",
+                        suffixIcon: IconButton(
+                            icon: Icon(Icons.remove_red_eye,
+                                color: this._senhaMostrar
+                                    ? Colors.blue
+                                    : Colors.grey),
+                            onPressed: () {
+                              setState(() =>
+                                  this._senhaMostrar = !this._senhaMostrar);
+                            }),
                         filled: true,
                         fillColor: Colors.white,
                         border: OutlineInputBorder(
@@ -145,6 +158,7 @@ class _CadastroVacinadorState extends State<CadastroVacinador> {
                     keyboardType: TextInputType.emailAddress,
                     style: TextStyle(fontSize: 20),
                     decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.sanitizer),
                         contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
                         hintText: "C.R.M",
                         filled: true,

@@ -15,6 +15,7 @@ class _CadastroUbsState extends State<CadastroUbs> {
   TextEditingController _controllerSenha = TextEditingController();
   TextEditingController _controllerEndUbs = TextEditingController();
   String _mensagemErro = "";
+  bool _senhaMostrar = false;
   //metodo para validar os campos do usuario
   _validarCampos() {
     String nome = _controllerNome.text;
@@ -98,6 +99,7 @@ class _CadastroUbsState extends State<CadastroUbs> {
                     keyboardType: TextInputType.text,
                     style: TextStyle(fontSize: 20),
                     decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.person),
                         contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
                         hintText: "Nome UBS",
                         filled: true,
@@ -113,6 +115,7 @@ class _CadastroUbsState extends State<CadastroUbs> {
                     keyboardType: TextInputType.emailAddress,
                     style: TextStyle(fontSize: 20),
                     decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.email),
                         contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
                         hintText: "E-mail",
                         filled: true,
@@ -126,11 +129,21 @@ class _CadastroUbsState extends State<CadastroUbs> {
                   child: TextField(
                     controller: _controllerSenha,
                     keyboardType: TextInputType.emailAddress,
-                    obscureText: true,
+                    obscureText: !this._senhaMostrar,
                     style: TextStyle(fontSize: 20),
                     decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.security),
                         contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
-                        hintText: "senha",
+                        hintText: "Senha",
+                        suffixIcon: IconButton(
+                            icon: Icon(Icons.remove_red_eye,
+                                color: this._senhaMostrar
+                                    ? Colors.blue
+                                    : Colors.grey),
+                            onPressed: () {
+                              setState(() =>
+                                  this._senhaMostrar = !this._senhaMostrar);
+                            }),
                         filled: true,
                         fillColor: Colors.white,
                         border: OutlineInputBorder(
@@ -144,8 +157,9 @@ class _CadastroUbsState extends State<CadastroUbs> {
                     keyboardType: TextInputType.emailAddress,
                     style: TextStyle(fontSize: 20),
                     decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.location_on),
                         contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
-                        hintText: "endereço",
+                        hintText: "Endereço",
                         filled: true,
                         fillColor: Colors.white,
                         border: OutlineInputBorder(

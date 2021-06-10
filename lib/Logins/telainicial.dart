@@ -28,6 +28,7 @@ class _telainicialState extends State<telainicial> {
               context, MaterialPageRoute(builder: (_) => escolharlogins()));
         },
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
