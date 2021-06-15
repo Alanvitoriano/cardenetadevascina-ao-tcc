@@ -3,7 +3,7 @@
 
 ## 1. Apresentação
 <p align="center">
-    <img src="img_readme/logo.jpeg">
+    <img src="img_readme/logo.jpeg" width="400">
 </p>
 
 Vacina ON é um sistema baseado em um aplicativo móvel para auxiliar as pessoas e profissionais da saúde a manter de forma prática, a organização e arquitetura de uma carteira de vacinação. Sendo responsável por organizar, agendar e registrar as vacinas recebidas pelo cidadão ao longo da sua vida.
@@ -53,22 +53,23 @@ O sistema deve permitir a visualização do histórico das vacinas tomadas pelo 
 #### 3.1. Use Case
 
 <p align="center">
-    <img src="img_readme/img_usecase.png">
+    <img src="img_readme/img_usecase.png" width="400">
 </p>
 > Use Case 
 
 #### 3.2. Diagrama de Classe (UML)
 <p align="center">
-    <img src="img_readme/img_modelo_banco.png">
+    <img src="img_readme/img_modelo_banco.png" width="400">
 </p>
 > Diagrama de classe para as principais entidades do sistema
 
+<!-- 
 #### 3.3. Modelo Entidade Relacionamento
 <p align="center">
     <img src="">
 </p>
 > Modelo entidade relacionamento
-
+-->
 
 ## 4. Tecnologias:
 
@@ -84,72 +85,72 @@ O sistema deve permitir a visualização do histórico das vacinas tomadas pelo 
 
 ##### Tela inicial
 <p align="center">
-    <img src="img_readme/pag_inicial.jpeg">
+    <img src="img_readme/pag_inicial.jpeg" width="400">
 </p>
 > Tela inicial do aplicativo
 
 #### Tela para selecionar o login
 <p align="center">
-    <img src="img_readme/img_selecionar_login.jpeg">
+    <img src="img_readme/img_selecionar_login.jpeg" width="400">
 </p>
 > Tela para selecionar o tipo de login: usuário, ubs ou vacinador, ou caso deseje, cadastra-se na plataforma
 
 #### Tela de Login do Usuário
 <p align="center">
-    <img src="img_readme/img_login_usuario.jpeg">
+    <img src="img_readme/img_login_usuario.jpeg" width="400">
 </p>
 > Tela de login do usuário, caso seja um vacinador ou UBS possui a possibilidade de realizar a troca para o devido login
 
 #### Selecionar o tipo de Cadastro 
 <p align="center">
-    <img src="img_readme/img_selecionar_cadastro.jpeg">
+    <img src="img_readme/img_selecionar_cadastro.jpeg" width="400">
 </p>
 > Tela para selecionar o tipo de cadastro que será realizado: Usuário, UBS ou Vacinador. 
 
 #### Cadastrar o Usuário
 <p align="center">
-    <img src="img_readme/img_cadastro_usuario.jpeg">
+    <img src="img_readme/img_cadastro_usuario.jpeg" width="400">
 </p>
 > Tela para cadastrar o usuário.
 
 #### Cadastrar a UBS
 <p align="center">
-    <img src="img_readme/img_cadastro_ubs.jpeg">
+    <img src="img_readme/img_cadastro_ubs.jpeg" width="400">
 </p>
 > Tela para cadastrar a UBS.
 
 #### Cadastrar o Vacinador
 <p align="center">
-    <img src="img_readme/img_cadastro_vacinador.jpeg">
+    <img src="img_readme/img_cadastro_vacinador.jpeg" width="400">
 </p>
 > Tela para cadastrar o vacinador.
 
 #### Cadastrar a 1ª dose da vacina
 <p align="center">
-    <img src="img_readme/img_cadastro_vacina.jpeg">
+    <img src="img_readme/img_cadastro_vacina.jpeg" width="400">
 </p>
 > Tela para cadastrar a primeira dose da vacina.
 
 #### Cadastro 2ª dose da vacina
 <p align="center">
-    <img src="img_readme/img_cadastro_2dose.jpeg">
+    <img src="img_readme/img_cadastro_2dose.jpeg" width="400">
 </p>
 > Tela que irá aparecer para direcionar o usuário para cadastrar a segunda dose da vacina, caso seja necessário.
 
 <p align="center">
-    <img src="img_readme/img_2dose.jpeg">
+    <img src="img_readme/img_2dose.jpeg" width="400">
 </p>
 > Tela para cadastrar a segunda dose da vacina.
 
 #### Listagem das vacinas tomadas
 <p align="center">
-    <img src="img_readme/img_lista_vacinas.jpeg">
+    <img src="img_readme/img_lista_vacinas.jpeg" width="400">
 </p>
 > Tela de listagem de todas as vacinas tomadas pelo o usuário, incluindo as primeiras doses, e caso necessário as segundas doses tomadas.
 
 #### Contatos dos Vacinadores e UBS 
 <p align="center">
-    <img src="img_readme/img_contatos.jpeg">
+    <img src="img_readme/img_contatos.jpeg" width="400">
 </p>
 > Tela dos contatos dos vacinadores e das UBS locais 
 
@@ -158,32 +159,32 @@ O sistema deve permitir a visualização do histórico das vacinas tomadas pelo 
 
 #### 6.1. Usuários
 <p align="center">
-    <img src="img_readme/firebase_usuarios.jpeg">
+    <img src="img_readme/firebase_usuarios.jpeg" width="400">
 </p>
 
 #### 6.2. UBS
 <p align="center">
-    <img src="img_readme/firebase_ubs.jpeg">
+    <img src="img_readme/firebase_ubs.jpeg" width="400">
 </p>
 
 #### 6.3. Vacinador
 <p align="center">
-    <img src="img_readme/firebase_vacinador.jpeg">
+    <img src="img_readme/firebase_vacinador.jpeg" width="400">
 </p>
 
 #### 6.4. Usuários com a 1ª Dose da Vacina:
 <p align="center">
-    <img src="img_readme/firebase_vacina.jpeg">
+    <img src="img_readme/firebase_vacina.jpeg" width="400">
 </p>
 
 #### 6.5. Usuários com a 2ª Dose da Vacina:
 <p align="center">
-    <img src="img_readme/firebase_2dose.jpeg">
+    <img src="img_readme/firebase_2dose.jpeg" width="400">
 </p>
 
 #### 6.6. Validação das Vacinas
 <p align="center">
-    <img src="img_readme/firebase_validacao.jpeg">
+    <img src="img_readme/firebase_validacao.jpeg" width="400">
 </p>
 
 
