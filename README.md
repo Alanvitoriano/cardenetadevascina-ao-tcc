@@ -91,7 +91,7 @@ O sistema deve permitir a visualização do histórico das vacinas tomadas pelo 
 
 #### Tela para selecionar o login
 <p align="center">
-    <img src="img_readme/img_selecionar_login.jpeg" width="400">
+    <img src="img_readme/img_selecionar_login.jpeg" width="250">
 </p>
 > Tela para selecionar o tipo de login: usuário, ubs ou vacinador, ou caso deseje, cadastra-se na plataforma
 
